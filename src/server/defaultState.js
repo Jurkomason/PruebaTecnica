@@ -1,20 +1,20 @@
 export const defaultState={
     users:[{     
-        id: 4,
+        id: "4",
         email: "eve.holt@reqres.in",
         first_name: "Eve",
         last_name: "Holt",
         avatar:"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
     },
     {
-        id: 5,
+        id: "5",
         email: "charles.morris@reqres.in",
         first_name: "Charles",
         last_name: "Morris",
         avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"
     },
     {
-        id: 6,
+        id: "6",
         email: "tracey.ramos@reqres.in",
         first_name: "Tracey",
         last_name: "Ramos",

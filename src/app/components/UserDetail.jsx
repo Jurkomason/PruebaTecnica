@@ -7,14 +7,14 @@ const UserDetail = ({
     id,
     user,
 })=>(
-    <div className="card col-lg-4 ">
+    <div className="card col-lg-4 mt-4 mb-4 bg-secondary ">
         
         <img className="card-img-top" src={user.avatar} alt=""/>
         <div className="card-body">
-            <h2>
+            <h2 className="text-light">
             {user.first_name} {user.last_name}
             </h2>
-            <h4>E-mail: {user.email}</h4>
+            <h4 className="text-light">E-mail: {user.email}</h4>
         </div>
 
     </div>

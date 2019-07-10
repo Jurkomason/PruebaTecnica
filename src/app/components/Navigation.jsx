@@ -5,7 +5,7 @@ import React from 'react';
 const Navigation=()=>(
     <div>
         <Link to="/">
-            <h1>
+            <h1 className="text-light ml-3 mb-3">
                 Usuarios
             </h1>
         </Link>

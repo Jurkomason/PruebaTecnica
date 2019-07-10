@@ -16,7 +16,7 @@ export const Dashboard =({users,getUser})=>(
                 <h3>{user.email}</h3>
             </div>
         </div>   ))}
-        <button onClick={()=>getUser()}>Agregar Nuevo</button>
+        <button onClick={()=>getUser()}>Retornar usuarios</button>
     </div>
 );
 

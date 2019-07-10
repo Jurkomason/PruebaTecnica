@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server",
     "dev": "webpack-dev-server --open",
-    "server": "babel-node src/server/server",
+    "server": "@babel-node src/server/server",
     "start-dev": "concurrently \"npm run server\" \"npm run dev\""
   },
   "keywords": [],

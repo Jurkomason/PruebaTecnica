@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
-    
-    "start": "babel-node index.js",
+    "start": "npm run server",
     "dev": "webpack-dev-server --open",
     "server": "babel-node src/server/server",
     "start-dev": "concurrently \"npm run server\" \"npm run dev\""
@@ -32,7 +31,6 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "babel-cli": "^6.26.0",
     "history": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.5.0",

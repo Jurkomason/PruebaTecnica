@@ -5,18 +5,20 @@ import {Link} from 'react-router-dom';
 import * as mutations from '../store/mutations';
 
 export const Dashboard =({users,getUser})=>(
-    <div>
+    <div className="container">
         {users.map(user=>(
-        <div >
-            <Link to={`/user/${user.id}`} >
-                <h2 key={user.id}>{user.first_name} {user.last_name}</h2>
-            </Link>
-            <img src={user.avatar} alt=""/> 
-            <div>
-                <h3>{user.email}</h3>
+        <div className="card col-6">
+            <div className="card-body">
+                <img className="card-img-top" src={user.avatar} alt=""/> 
+                <Link to={`/user/${user.id}`} >
+                    <h1 className="" key={user.id}>{user.first_name} {user.last_name}</h1>
+                </Link>
+                <div className="">
+                    <h4>E-mail: {user.email}</h4>
+                </div>
             </div>
         </div>   ))}
-        <button onClick={()=>getUser()}>Retornar usuarios</button>
+        <button className="btn btn-primary btn-block mt-2 col-3" onClick={()=>getUser()}>Retornar usuarios</button>
     </div>
 );
 

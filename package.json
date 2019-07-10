@@ -9,7 +9,8 @@
     "start": "npm run server",
     "dev": "webpack-dev-server --open",
     "server": "babel-node src/server/server",
-    "start-dev": "concurrently \"npm run server\" \"npm run dev\""
+    "start-dev": "concurrently \"npm run server\" \"npm run dev\"",
+    "start-prod": "concurrently \"npm run build\" \"npm run start-dev\""
   },
   "keywords": [],
   "author": "",

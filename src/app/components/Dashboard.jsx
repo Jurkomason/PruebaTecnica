@@ -24,7 +24,8 @@ const mapStateToProps=state=>state;
 
 const mapDispatchToProps = (dispatch)=>({
         getUser(){
-            dispatch(mutations.GET_USERS);
+            
+            dispatch(mutations.getUser());
         }
 })
 

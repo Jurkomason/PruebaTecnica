@@ -4,13 +4,15 @@ import {createLogger} from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
 const sagaMiddleware=createSagaMiddleware();
-import * as sagas from './sagas.mock';
+import * as sagas from './sagas';
 import * as mutations from './mutations';
 
 export const store = createStore(
     combineReducers({
-        users(users=defaultState.users,action){
+        users(users=[],action){
             switch(action.type){
+                case mutations.SET_STATE:
+                    return action.state.users;
                 case mutations.CREATE_USER:
                     return[...users, {
                         id:action.userId,

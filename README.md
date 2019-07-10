@@ -8,7 +8,7 @@ Para la correcta instalacion de la aplicación se debe seguir los siguientes pas
 
 El archivo bundle.js de la carpeta dist hace referencia al build para produccion de la aplicacion.
 
-Tambien se implemento un despliegue a Heroku: https://pruebatecnica-1.herokuapp.com/
+Tambien se implemento un despliegue a Heroku.
 
 ### NOTA: 
 La carpeta 'app' hace referencia a el frontend mientras que la carpeta 'server' hace referencia a el backend.
